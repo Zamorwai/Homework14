@@ -31,7 +31,7 @@ public class DeleteActivity extends AppCompatActivity {
         @Override
         public void onClick(View view) {
             Intent intent = new Intent(DeleteActivity.this, MainActivity.class);
-            intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+            intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
             DatabaseHelper database = new DatabaseHelper(getApplicationContext());
             switch (view.getId()) {
                 case R.id.delete_all_notes:

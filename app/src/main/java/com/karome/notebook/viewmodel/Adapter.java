@@ -47,6 +47,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Log.d(TAG, "onBindViewHolder: Called for position: " + position);
+
         holder.title.setText(notesList.get(position).getTitle());
         holder.description.setText(notesList.get(position).getDescription());
 
